@@ -7,7 +7,7 @@ requirements = []
 
 setup(
     name="ACNH_pixel_color",
-    version="0.0.2",
+    version="0.0.4",
     author="Zachary Chandler",
     author_email="zachary.c.me@gmail.com",
     description="A program to associate keys in one text file with values in another",
