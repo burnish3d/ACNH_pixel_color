@@ -9,14 +9,15 @@ def make_lookup():
   """
   d1, d2 = {}, {}
 
-  with open("ACNH_pixel_color\res\ACNH_color_palette", "r") as f1:
+  with open(r"ACNH_pixel_color\res\ACNH_color_palette", "r") as f1:
     d1['column_headers'] = f1.readline().split(",")
     while s1 := f1.readline():
-      vals = s1.split(",")
-      d1[vals[3]] = vals[0:3]
+        vals = s1.split(",")
+        if vals[3] not in d1:
+          d1[vals[3]] = " ".join(vals[0:3])
 
 
-  with open("ACNH_pixel_color\res\farben.txt", "r") as f2:
+  with open(r"ACNH_pixel_color\res\farben.txt", "r") as f2:
     while s2 := f2.readline():
       vals = s2[1:].split(",")
       d2[vals[1][:-1]] = vals[0]
