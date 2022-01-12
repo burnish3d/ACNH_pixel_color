@@ -1,4 +1,4 @@
-from ACNH_pixel_color import ACNH_pixel_color as ACNH
+import ACNH_pixel_color as ACNH
 
 if __name__ == "__main__":
   

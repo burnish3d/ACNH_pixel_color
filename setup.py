@@ -7,7 +7,7 @@ requirements = []
 
 setup(
     name="ACNH_pixel_color",
-    version="0.0.6",
+    version="0.0.7",
     author="Zachary Chandler",
     author_email="zachary.c.me@gmail.com",
     description="A program to associate IDs with h/v/b values for color matching in ACNH",
@@ -15,7 +15,8 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     url="https://github.com/burnish3d/ACNH_pixel_color",
-    packages=find_packages(),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3.10",
