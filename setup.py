@@ -7,10 +7,10 @@ requirements = []
 
 setup(
     name="ACNH_pixel_color",
-    version="0.0.5",
+    version="0.0.6",
     author="Zachary Chandler",
     author_email="zachary.c.me@gmail.com",
-    description="A program to associate keys in one text file with values in another",
+    description="A program to associate IDs with h/v/b values for color matching in ACNH",
     license="MIT",
     long_description=readme,
     long_description_content_type="text/markdown",
