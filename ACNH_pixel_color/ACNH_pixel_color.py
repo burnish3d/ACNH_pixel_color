@@ -1,7 +1,7 @@
 
 
 
-
+print("a journey of discovery")
 
 def make_lookup():
   """
