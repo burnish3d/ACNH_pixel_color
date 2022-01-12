@@ -1,12 +1,12 @@
 
-import ACNH_pixel_color
+from ACNH_pixel_color import ACNH_pixel_color as ACNH
 
 
 
 
 if __name__ == "__main__":
   
-  lookup = ACNH_pixel_color.ACNH_pixel_color.make_lookup()
+  lookup = ACNH.make_lookup()
   print("Enter the lookup number of a hex code, the next line will print the values of the hue, vividness, and brightness.")
   while True:
     id = input()
